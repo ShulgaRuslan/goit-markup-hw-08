@@ -1,0 +1,151 @@
+/*footer*/
+footer {
+    background-color: $primary-footer-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container.footer {
+    display: flex;
+}
+.enjoy {
+    margin-left: 70px;
+}
+.footer__logo {
+    font-family: $font-family-Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+&-first {
+    color: $accent-color;
+}
+&-second {
+    color: $primary-bg-color;
+}
+}
+.address {
+    font-style: normal;
+}
+.contacts {
+&__map {
+    margin-bottom: 9px;
+}
+&__link {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-bg-color;   
+}
+&__post {
+    margin-bottom: 9px;
+}
+
+&__mail {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $adress-color;
+}
+
+&__telefon {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $adress-color;
+}
+}
+.footer a:hover,
+.footer a:focus {
+    color: $accent-color;
+    transition: 250ms $timinng;
+}
+.enjoy__title {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: $primary-bg-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+/*Оформление соц сетей footer*/
+.footer__enjoy__icon:not(:last-child) {
+    margin-right: 10px;
+}
+.footer__enjoy__icon {
+    height: 44px;
+}
+.footer__enjoy__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 250ms $timinng;
+}
+.footer__enjoy__link:hover,
+.footer__enjoy__link:focus {
+    background-color: $accent-color;
+    fill: $primary-bg-color;
+    transition: 250ms $timinng;
+
+}
+.footer__enjoy_svg {
+    fill: $primary-bg-color;
+}
+
+/*Кнопка Формы Подписки футер */
+.subscribe {
+    margin-left: auto;
+
+
+&__form {
+    display: flex;
+    justify-content: center;
+}
+
+&__input {
+    background: transparent;
+    padding: 15px 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+&__button {
+    border-radius: 4px;
+    max-width: 200px;
+    width: 200px;
+    padding: 10px 28px;
+    border: 1px transparent;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    color: #fff;
+    cursor: pointer;
+
+
+
+&__element {
+    display: flex;
+}
+
+&__icon {
+    fill: #fff;
+    margin-left: 10px;
+}
+}
+}

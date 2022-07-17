@@ -1,0 +1,96 @@
+/*оформление team*/
+.team-staff {
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+}
+
+.title-team {
+    margin-bottom: 50px;
+    margin-top: 0;
+    color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 270px;
+    height: auto;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.person:nth-child(4n) {
+    margin-right: 0;
+}
+
+.person:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.human {
+    padding-top: 30px;
+    background-color: #fff;
+}
+
+.title-name {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.job-title {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/*Оформление соц сетей*/
+.sociality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.sociality__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sociality__icon {
+    fill: #afb1b8;
+}
+
+.sociality__link:hover,
+.sociality__link:focus {
+    background-color: #2196f3;
+}
+
+.sociality__link:hover .sociality__icon,
+.sociality__link:focus .sociality__icon {
+    fill: #fff;
+}
+
+.sociality__network:not(:last-child) {
+    margin-right: 10px;
+}
