@@ -1,20 +1,51 @@
 .header {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    @media screen and  (min-width: 480px) and (max-width: 767px) {
+        min-width: 480px;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+    
+    border-color: $border-color-header;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-color: $border-color-header;
-}
 
-.header-page {
+}
+@media screen and (min-width:1200px) {
+    
+        border-color: $border-color-header;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+}
+.header-page{
     display: flex;
     align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    @media screen and (min-width:768px){
+        position: relative;
+    }
+    @media screen and (min-width:768px) and (max-width:1200px) {
     height: 80px;
+    }
+    @media screen and (min-width:1200px){
+        height: 80px;
+    }
+    }
+
 
 .header-page__logo {
+    width: 134px;
     font-family: $font-family-Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+     
+        
+    
 
 .header-page__logo--first {
     color: $accent-color;
@@ -28,17 +59,32 @@
     color: $primary-bg-color;
 }
 }
-
 /*site-nav*/
 .site-nav {
     display: flex;
-    margin-left: 93px;
+     
 
-
+@media screen and (max-width: 767px) {
+    display: block;
+    margin-left: 0;   
+}
+@media screen and (min-width: 769px) {
+    display: flex;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 84px;
+}
+@media screen and (min-width:1200px) {
+    margin-right: 305px;   
+}
 .site-nav__item {
     margin-right: 50px;
-}
+   /* margin-bottom: 32px;*/
+    @media screen  {
+        
+    }
 
+}
 .site-nav__item:last-child {
     margin-right: 0;
 }
@@ -53,6 +99,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition:250ms $timinng;
+    @media screen and (max-width:767px) {
+        padding: 0;
+        margin-top: 32px;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+    }
 }
 
 .site-nav__link {
@@ -69,14 +123,22 @@
     border-radius: 2px;
     background-color: $accent-color;
     opacity: 1;
-}
+    @media screen and (max-width:767px){
+        display: none;
+    }
+
 
 &__link:hover,
 &__link:focus {
     color: $accent-color;
 }
-
-.site-nav__link--current {
+}
+.site-nav__link.site-nav__link--current {
+    color: $accent-color;
+    
+}
+@media screen and (max-width:767px) {
+.site-nav__link.site-nav__link--current {
     color: $accent-color;
 }
 }
@@ -85,9 +147,24 @@
     display: flex;
     margin-left: auto;
 
+@media screen and (max-width: 768px) {
+    display: block;
+    margin-top: 302px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;    
+        
+}
 
+}
 .site-adress__item {
-    margin-right: 50px;
+    
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;
+    }
+    
 }
 
 .site-adress__item:last-child {
@@ -105,17 +182,117 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: 250ms $timinng;
-}
+    @media screen and (max-width: 768px){
+
+    }
+    
+
+
+
  &__link:hover,
  &__link:focus {
     color: $accent-color;
 }
+
+}
+.site-adress__link__telefon {
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+    }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        display: flex;
+            align-items: center;
+            margin-top: 10px;
+        font-size: 12px;
+            line-height: 1.16;
+              letter-spacing: 0.02em;
+        color: $primary-text-color;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: .02em;
+    color: #757575;
+        
+    }
+
+    &:hover,
+    &:focus {
+        color:$accent-color;
+    }
+}
+.site-adress__link__mail {
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $primary-text-color;
+    }
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            color: $primary-text-color;
+        }
+                @media screen and (min-width:1200px) {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    line-height: 1.16;
+                    letter-spacing: .02em;
+                    color: #757575;
+        
+                }
+                                &:hover,
+                                &:focus {
+                                    color: $accent-color;
+                                }
+
+}
+.site-social{
+@media screen and (max-width: 767px){
+    display: flex;
+    margin-top: 64px;
+}
+@media screen and (min-width:768px) {
+    display: none;
+}
+}
+
+.site-social__link{
+    @media screen and (max-width: 768px){
+       
+        height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color:$accent-color;
+        
+       
+    }
 }
 
 /*Оформление иконок в хедере*/
 .site-adress__icon {
-    fill: $primary-text-color;
+    fill: currentColor;
     margin-right: 10px;
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 }
 
 .site-adress__link:hover .site-adress__icon,

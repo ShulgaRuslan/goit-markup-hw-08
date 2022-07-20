@@ -2,7 +2,12 @@
 .activ {
     padding-bottom: 94px;
     padding-top: 0;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
+
 
 .title-work {
     margin-top: 0;

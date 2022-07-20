@@ -1,19 +1,26 @@
-/*оформление секции клиентов*/
+/*оформление секции клиентов Проверить шрифты*/
+ 
 .title-client {
     margin-top: 0;
     margin-bottom: 50px;
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    @media screen and (max-width: 767px){}
 }
 
 .clients {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-
+    gap: 30px;
+@media screen and (min-width:1200px){
+    flex-wrap: nowrap;
+    gap: 0;
+}
     &__link {
         display: flex;
         width: 170px;
@@ -25,15 +32,23 @@
         border-radius: 4px;
         transition: border 250ms timinng,
             fill 250ms timinng;
-
-        &:hover {
+@media screen and (min-width:767px){
+    width: 210px;
+    height: 92px;   
+}
+@media screen and (min-width:1200px){
+    width: 170px;
+}
+ &:hover {
             border: 1px solid $accent-color;
             fill: $accent-color;
 
         }
     }
+}
+@media screen and (min-width:1200px) {
 
-    &__images:not(:last-child) {
-        margin-right: 30px;
-    }
+.clients__images:not(:last-child) {
+    margin-right: 30px;
+}
 }

@@ -13,6 +13,8 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 textarea {
     font-size: 14px;
@@ -26,6 +28,7 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
+
 a {
     text-decoration: none;
 }
@@ -33,17 +36,4 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     display: none;
-}
-.container {
-    box-sizing: border-box;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }

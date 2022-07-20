@@ -1,8 +1,16 @@
 /*оформление team*/
 .team-staff {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background-color: #f5f4fa;
+    @media screen and (max-width: 768px){
+    min-width:480px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+        
+    }
 }
+
 
 .title-team {
     margin-bottom: 50px;
@@ -12,31 +20,62 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    
+    @media screen and (max-width: 1199px)  {
+        margin-bottom: 30px;
+        font-size:28px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: .03em;
+        
+    }
+   
 }
 
 .staff {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+@media screen and (min-width: 768px){
+        margin: -15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
 }
 
 .person {
-    width: 270px;
+    // width: 450px;
     height: auto;
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
+    @media screen and (max-width: 767px) {
+        &:not(:last-child){
+        margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 60px)/2);
+       margin: 15px; 
+    }   
+        @media screen and (min-width: 1200px){
+            width: calc((100% - 8 * 15px) / 4);
+            margin: 15px;
+        }
 
-.person:nth-child(4n) {
+}
+@media screen and (min-width:1200px) {
+ .person:nth-child(4n) {
     margin-right: 0;
 }
-
-.person:nth-last-child(-n+4) {
-    margin-bottom: 0;
 }
 
 .human {
     padding-top: 30px;
+    padding-bottom: 24px;
     background-color: #fff;
 }
 
@@ -64,6 +103,12 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0;   
+    }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+    }
 }
 
 .sociality__link {
