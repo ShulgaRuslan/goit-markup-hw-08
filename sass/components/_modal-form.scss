@@ -138,6 +138,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and  (max-width: 1199px){
+        font-size: 12px;
+    }
 }
 
 .form__text-terms {
@@ -146,6 +149,9 @@
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196f3;
+    @media screen and (max-width: 1199px) {
+            font-size: 12px;
+        }
 }
 
 .form__button {

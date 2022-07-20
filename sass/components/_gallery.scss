@@ -2,151 +2,157 @@
 
 /*оформление кнопок портфолио*/
 .portfolio-button {
-    padding-bottom: 50px;
-    display: flex;
-    
-@media screen and (max-width: 767px) {
+  padding-bottom: 50px;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     padding-bottom: 40px;
-}
-    @media screen and(min-width:768px){
-        justify-content:center ;
-    }
-
+  }
+  @media screen and(min-width:768px) {
+    justify-content: center;
+  }
 }
 .portfolio-item:not(:last-child) {
-    margin-right: 8px;
-    @media screen and (max-width: 767px){
-      &:not(:last-child) {
-                margin-right: 8px;
-                margin-bottom: 15px;
+  margin-right: 8px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+      margin-bottom: 15px;
     }
-}         
+  }
 }
 .portfolio-item__filter {
-    border: none;
-    border-radius: 4px;
-    padding: 6px 22px;
-    color: $title-text-color;
-    background-color: $primary-button-color;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    transition: 250ms $timinng;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  color: $title-text-color;
+  background-color: $primary-button-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  transition: 250ms $timinng;
 }
 .portfolio-item__filter:hover,
 .portfolio-item__filter:focus {
-    background-color: $accent-color;
-    color: $primary-bg-color;
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+  background-color: $accent-color;
+  color: $primary-bg-color;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .portfolio-gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    @media screen and (max-width: 767px){
-        display: block;
-    }
-        @media screen and(min-width:768px){
-            margin: -15px;
-        }
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and(min-width:768px) {
+    margin: -15px;
+  }
 }
 .portfolio {
-    overflow: hidden;
-    width: 100%;
-    
-    margin-bottom: 30px;
-    @media screen and (max-width: 767px){
-         .portfolio-gallery__item:not(:last-child) {
-                margin-bottom: 30px;
-    }
-}
-    @media screen and(min-width:768px){
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-        }
-        @media screen and(min-width:1200px) {
-            width: calc((100% - 6 * 15px) / 3);
-            
-        }
-       
+  overflow: hidden;
+  width: 100%;
 
-    &:hover {
-        cursor: pointer;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-            }
-    &:nth-child(3n) {
-        margin-right: 0;
-        }
-    
-    &:nth-last-child(-n + 3) {
-        margin-bottom: 0;
-        }
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    .portfolio-gallery__item:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
+  @media screen and(min-width:768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .portfolio-gallery__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    &:nth-child(3n) {
+    margin-right: 15px;
+  }
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
 .portfolio:hover .overlay {
-    transform: translateY(-100%);
-    opacity: 1;
-    transform: 250ms $timinng;
+  transform: translateY(-100%);
+  opacity: 1;
+  transform: 250ms $timinng;
 }
 /*Оформление выезжающего окна */
 .thumb {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 354px;
-    padding: 63px 24px;
-    opacity: 0;
-    background: $accent-color;
-    transform: translateY(0%);
-    transition: opacity 250ms $timinng,
-        transform 250ms $timinng;
-       
+  position: absolute;
+  width: 100%;
+  height: 354px;
+  padding: 63px 24px;
+  opacity: 0;
+  background: $accent-color;
+  transform: translateY(0%);
+  transition: opacity 250ms $timinng, transform 250ms $timinng;
 }
 .paragrah {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $primary-bg-color;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $primary-bg-color;
 }
 
 .portfolio .title {
-    color: $title-text-color;
+  color: $title-text-color;
 }
 .characteristic {
-    border: 1px solid $border--color-portfolio;
-    padding: 20px 24px;
-    background-color: $primary-bg-color;
+  border: 1px solid $border--color-portfolio;
+  padding: 20px 24px;
+  background-color: $primary-bg-color;
 }
 
 .title-list {
-    margin-bottom: 0;
-    margin-top: 0;
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .different {
-    margin-top: 4px;
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 1.14;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.14;
+  color: $primary-text-color;
 }
 .tyu {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

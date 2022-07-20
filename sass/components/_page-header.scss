@@ -149,7 +149,9 @@
 
 @media screen and (max-width: 768px) {
     display: block;
-    margin-top: 302px;
+    margin-top: auto;
+    margin-left: 0;
+    margin-bottom: 64px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
     display: flex;
@@ -259,7 +261,7 @@
 .site-social{
 @media screen and (max-width: 767px){
     display: flex;
-    margin-top: 64px;
+    
 }
 @media screen and (min-width:768px) {
     display: none;
